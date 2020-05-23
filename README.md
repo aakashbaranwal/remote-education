@@ -1,2 +1,2 @@
 # remote-education
-Cloud-Titans
+Cloud-Titans Hackathon
