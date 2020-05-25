@@ -1,0 +1,20 @@
+<h2>No. of words in your text is:<b>{{countword}}</b></h2>
+<h2>No. of letters in your text is:<b>{{count}}</b></h2>
+<br>
+
+Your text: {{showtext}}
+<p>
+{% for word,count in details%}
+{{word}}:{{count}}
+</p>
+{% endfor %}
+<br>
+<p>
+{% for word,count in detailsword%}
+{{word}}:{{count}}
+</p>
+{% endfor %}
+<br>
+{{letterlist}}
+<br>
+{{wordlist}}
