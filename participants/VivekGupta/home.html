@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <!-- Style Sheet -->
+    <link rel="'stylesheet'" href="css/signup.css">
+    <!--Font awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<style media="screen">
+  .section-heading{
+    font-size: 3rem;
+    line-height: 2;
+    text-align: center;
+    padding: 30px 0 20px 0;
+  }
+  .navbar-brand{
+    font-size: 2rem;
+    padding-left: 10px;
+  }
+  .nav-link{
+    font-size: 1.2rem;
+  }
+  .nav-item{
+    padding: 0 10px;
+  }
+  footer{
+    padding: 30px;
+    text-align: center;
+    background-color: #303960;
+    color: #fff;
+  }
+  .heading{
+    background-image: url(images/heading.jpg);
+    width: 100%;
+    height: 650px;
+    items-align: center;
+    padding: 200px;
+  }
+  .big-heading{
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 10px 1px 20px black;
+  }
+  .heading-img{
+    color: white;
+    padding-bottom: 20px;
+  }
+  body{
+    text-align: center;
+  }
+  /* Feature Image */
+  .feature-box{
+    padding: 5%;
+  }
+  .feature-img{
+    color: #4a47a3;
+    margin-bottom: 1rem;
+  }
+  .feature-img:hover{
+    color: #192965;
+  }
+  #features{
+    position: relative;
+  }
+  .container{
+    padding-top: 50px;
+  }
+  #about{
+    background-color: #f9f9f9;
+    width: 100%;
+  }
+  @media(max-width:1028px) {
+    .heading{
+      text-align: left;
+      padding-top: 180px;
+    }
+    .big-heading{
+      font-size: 3rem;
+    }
+    .heading-img{
+      padding-bottom: 50px;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <div id="home">
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #303960;">
+    <a class="navbar-brand" href="#">Education</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Profile
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">My Profile</a>
+            <a class="dropdown-item" href="#">Sign out</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+  </form>
+    </div>
+  </nav>
+  <div class="heading">
+    <i class="fas fa-laptop fa-7x heading-img"></i>
+    <h1 class="big-heading">Let the learning be continued!</h1>
+    </div>
+    </div>
+
+
+<section id="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 feature-box">
+        <i class="fas fa-users fa-5x feature-img"></i>
+        <h3>Connect with others</h3>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 feature-box">
+        <i class="fas fa-book fa-5x feature-img"></i>
+        <h3>Test your skills.</h3>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 feature-box">
+        <i class="fas fa-graduation-cap fa-5x feature-img"></i>
+        <h3>Get yourself ranked.</h3>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 feature-box">
+        <i class="fas fa-trophy fa-5x feature-img"></i>
+        <h3>Open opportunities for future.</h3>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+  <h2 class="section-heading">Courses</h2>
+<div class="album py-5">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="images/sample.jpg" alt="" height="225px">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#303960"/></svg> -->
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Enroll In</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="images/sample.jpg" alt="" height="225px">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#303960"/></svg> -->
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Enroll In</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="images/sample.jpg" alt="" height="225px">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#303960"/></svg> -->
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Enroll In</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="images/sample.jpg" alt="" height="225px">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#303960"/></svg> -->
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Enroll In</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="images/sample.jpg" alt="" height="225px">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#303960"/></svg> -->
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Enroll In</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="images/sample.jpg" alt="" height="225px">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#303960"/></svg> -->
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Enroll In</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="images/sample.jpg" alt="" height="225px">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#303960"/></svg> -->
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Enroll In</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="images/sample.jpg" alt="" height="225px">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#303960"/></svg> -->
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Enroll In</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="images/sample.jpg" alt="" height="225px">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#303960"/></svg> -->
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Enroll In</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container py-5" id="about">
+    <div class="row contact">
+  <div class="col-12 col-md">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+    <small class="d-block mb-3 text-muted">&copy; 2020</small>
+  </div>
+  <div class="col-6 col-md">
+    <h5>Features</h5>
+    <ul class="list-unstyled text-small">
+      <li><a class="text-muted" href="#">Cool stuff</a></li>
+      <li><a class="text-muted" href="#">Random feature</a></li>
+      <li><a class="text-muted" href="#">Team feature</a></li>
+      <li><a class="text-muted" href="#">Stuff for developers</a></li>
+      <li><a class="text-muted" href="#">Another one</a></li>
+      <li><a class="text-muted" href="#">Last time</a></li>
+    </ul>
+  </div>
+  <div class="col-6 col-md">
+    <h5>Resources</h5>
+    <ul class="list-unstyled text-small">
+      <li><a class="text-muted" href="#">Resource</a></li>
+      <li><a class="text-muted" href="#">Resource name</a></li>
+      <li><a class="text-muted" href="#">Another resource</a></li>
+      <li><a class="text-muted" href="#">Final resource</a></li>
+    </ul>
+  </div>
+  <div class="col-6 col-md">
+    <h5>Resources</h5>
+    <ul class="list-unstyled text-small">
+      <li><a class="text-muted" href="#">Business</a></li>
+      <li><a class="text-muted" href="#">Education</a></li>
+      <li><a class="text-muted" href="#">Government</a></li>
+      <li><a class="text-muted" href="#">Gaming</a></li>
+    </ul>
+  </div>
+  <div class="col-6 col-md">
+    <h5>About</h5>
+    <ul class="list-unstyled text-small">
+      <li><a class="text-muted" href="#">Team</a></li>
+      <li><a class="text-muted" href="#">Locations</a></li>
+      <li><a class="text-muted" href="#">Privacy</a></li>
+      <li><a class="text-muted" href="#">Terms</a></li>
+    </ul>
+  </div>
+</div>
+  </div>
+
+  </body>
+
+<footer>
+<p>Made by Vivek Gupta</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script></body>
+</html>
