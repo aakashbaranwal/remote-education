@@ -33,16 +33,15 @@
     <div id="header">
         <div id="branding">
         
-    <h1 id="site-name"><a href="/admin/">Django Blog</a></h1>
+    <h1 id="site-name"><a href="{% url 'home' %}">OnlineEdu</a></h1>
 
         </div>
         
         
         <div class="section">
-            
-                Welcome,
-                <strong>{{user.username}}</strong>.
                 
+                WELCOME
+                <strong>{{user.username}}</strong>.        
         </div>
         <div class="navbar-nav">
               {% if user.is_authenticated %}
@@ -50,7 +49,7 @@
                 <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
               {% else %}
                 <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
-                <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
+                
               {% endif %}
             </div>
         

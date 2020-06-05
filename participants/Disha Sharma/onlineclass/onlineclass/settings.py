@@ -32,13 +32,56 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'user',
+    'phone_field',
+    'channels',
+    'chat',
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+  
+
+    #providers
+   
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.github'
 ]
+
+SOCIALACCOUNT_PROVIDERS = {
+    'facebook': {
+       
+        'APP': {
+            'client_id': '2614087688854635',
+            'secret': '42417b6d6fe63dc5502d2c9a594678ed',
+            'key': ''
+        }
+    },
+    'google': {
+        
+        'APP': {
+            'client_id': '415418318735-iqollsc9bej5r6qg3a9m964r0ml8n867.apps.googleusercontent.com',
+            'secret': '2EZBsW_XK0N3g5uHwwQflz7z',
+            'key': ''
+        }
+    },
+    'github': {
+       
+        'APP': {
+            'client_id': '5294e71d901ab7d12102',
+            'secret': '92ea8c3f89740521d025a2543777fe92773fb15e',
+            'key': ''
+        }
+    }
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -69,6 +112,13 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'onlineclass.wsgi.application'
+ASGI_APPLICATION = 'onlineclass.routing.application'
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer"
+    }
+}
 
 
 # Database
@@ -119,3 +169,32 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'static')
+]
+
+SITE_ID = 1
+
+LOGIN_URL = 'login'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = 'profile'
+
+AUTH_USER_MODEL = 'user.User' 
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend', # existing backend
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+#AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend','onlineclass.user.models.EmailBackend']
+# ACCOUNT_FORMS = {
+# 'signup': 'onlineclass.forms.StudentSignupForm',
+# }
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+
+MEDIA_ROOT =os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'
