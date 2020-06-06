@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <!-- Style Sheet -->
+  <link rel="'stylesheet'" href="css/signup.css" type="text/css"/>
+  <!--Font awesome-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+<style media="screen">
+footer{
+  padding: 30px;
+  text-align: center;
+  background-color: #303960;
+  color: #fff;
+}
+.navbar-brand{
+  padding-left: 10px;
+}
+.nav-link{
+  font-size: 1.2rem;
+}
+.nav-item{
+  padding: 0 10px;
+}
+.nav-item2{
+  padding: 10px;
+}
+.sideNav{
+  border-right: 1px solid black;
+}
+.newNav{
+  padding: 10px 0;
+}
+.nav-link3{
+color: black;
+text-decoration: none;
+padding-left: 10px;
+}
+.nav-item3{
+  padding: 10px 0;
+}
+</style>
+</head>
+
+<body>
+  <section class="heading">
+    <div class="navigation-bar">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #303960;">
+        <a class="navbar-brand" href="#"><i class="fas fa-laptop fa-2x"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Profile
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="profile.html">My Profile</a>
+                <a class="dropdown-item" href="login.html">Sign out</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item2 nav-link2 active" id="nav-home-tab" data-toggle="tab" href="profile.html" role="tab" aria-controls="nav-profile" aria-selected="true">Profile</a>
+        <a class="nav-item2 nav-link2" id="nav-profile-tab" data-toggle="tab" href="courses.html" role="tab" aria-controls="nav-courses" aria-selected="false">Courses</a>
+        <a class="nav-item2 nav-link2" id="nav-contact-tab" data-toggle="tab" href="dashboard.html" role="tab" aria-controls="nav-dashboard" aria-selected="false">Dashboard</a>
+        <a class="nav-item2 nav-link2" id="nav-contact-tab" data-toggle="tab" href="chats.html" role="tab" aria-controls="nav-chats" aria-selected="false">Chat Groups</a>
+      </div>
+    </nav>
+  </section>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse sideNav">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column newNav">
+          <li class="nav-item3">
+            <i class="fas fa-chart-line"></i>
+            <a class="nav-link3 active" href="#">
+              <span data-feather="home"></span>
+              Dashboard <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item3">
+            <i class="far fa-flag"></i>
+            <a class="nav-link3" href="#report">
+              <span data-feather="bar-chart-2"></span>
+              Reports
+            </a>
+          </li>
+          <li class="nav-item3">
+            <i class="fab fa-yandex-international"></i>
+            <a class="nav-link3" href="#">
+              <span data-feather="layers"></span>
+              Integrations
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <h6 class=" text-muted" style="padding-left: 60px;">
+          <span>Saved reports</span>
+          <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+
+        <ul class="nav flex-column mb-2 newNav">
+          <li class="nav-item3">
+            <i class="far fa-calendar-alt"></i>
+            <a class="nav-link3" href="#">
+              <span data-feather="file-text"></span>
+              Current month
+            </a>
+          </li>
+          <li class="nav-item3">
+            <i class="fas fa-chart-pie"></i>
+            <a class="nav-link3" href="#">
+              <span data-feather="file-text"></span>
+              Last quarter
+            </a>
+          </li>
+          <li class="nav-item3">
+            <i class="fas fa-user-friends"></i>
+            <a class="nav-link3" href="#">
+              <span data-feather="file-text"></span>
+              Social engagement
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group mr-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+          </div>
+          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            This week
+          </button>
+        </div>
+      </div>
+
+      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+
+      <h2>Reports</h2>
+      <div class="table-responsive" id="report">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>Test</th>
+              <th>Questions</th>
+              <th>Correct</th>
+              <th>Incorrect</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1,001</td>
+              <td>Lorem</td>
+              <td>ipsum</td>
+              <td>dolor</td>
+              <td>sit</td>
+            </tr>
+            <tr>
+              <td>1,002</td>
+              <td>amet</td>
+              <td>consectetur</td>
+              <td>adipiscing</td>
+              <td>elit</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="dashboard.js"></script>
+</body>
+<footer>
+  <p>Made with Love by Vivek Gupta</p>
+</footer>
+
+</html>

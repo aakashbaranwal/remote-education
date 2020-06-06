@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Profile</title>
+    <!-- Style Sheet -->
+    <link rel="'stylesheet'" href="css/profile.css">
+    <!--Font awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<style media="screen">
+footer{
+  padding: 30px;
+  text-align: center;
+  background-color: #303960;
+  color: #fff;
+}
+.navbar-brand{
+  padding-left: 10px;
+}
+.nav-link{
+  font-size: 1.2rem;
+}
+.nav-item{
+  padding: 0 10px;
+}
+.nav-item2{
+  padding: 10px;
+}
+</style>
+  </head>
+  <body>
+    <section class="heading">
+      <div class="navigation-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #303960;">
+      <a class="navbar-brand" href="#"><i class="fas fa-laptop fa-2x"></i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html/#about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Profile
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="profile.html">My Profile</a>
+              <a class="dropdown-item" href="login.html">Sign out</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+      </div>
+    </nav>
+      </div>
+
+<nav class="section-nav">
+<div class="nav nav-tabs" id="nav-tab" role="tablist">
+<a class="nav-item2 nav-link2" id="nav-home-tab" data-toggle="tab" href="profile.html">Profile</a>
+<a class="nav-item2 nav-link2 active" id="nav-profile-tab" data-toggle="tab" href="courses.html">Courses</a>
+<a class="nav-item2 nav-link2" id="nav-contact-tab" data-toggle="tab" href="dashboard.html">Dashboard</a>
+<a class="nav-item2 nav-link2" id="nav-contact-tab" data-toggle="tab" href="chats.html">Chat Groups</a>
+</div>
+</nav>
+    </section>
+
+    <!-- Profile Details -->
+    <section>
+      <div class="container">
+<div class="py-5 text-center">
+ <h2>Profile Details</h2>
+ <p class="lead">Below are the important areas of information to be filled. The details could also be changed by the user at some point of time in the future. Please enter all the valid details.</p>
+</div>
+
+<div class="row">
+ <div class="col-md-4 order-md-2 mb-4">
+   <h4 class="d-flex justify-content-between align-items-center mb-3">
+     <span class="text-muted">Profile Picture</span>
+   </h4>
+   <div class="profilePictures" style="border: 10px solid white;">
+     <img class="bd-placeholder-img" src="images/avatar.png" alt=""width="100%" height="300" />
+   </div>
+
+   <form class="card p-2">
+     <div class="input-group">
+       <button type="submit" class="btn btn-secondary btn-block">Edit</button>
+     </div>
+   </form>
+ </div>
+ <div class="col-md-8 order-md-1">
+   <h4 class="mb-3">Details</h4>
+   <form class="needs-validation" novalidate>
+     <div class="row">
+       <div class="col-md-6 mb-3">
+         <label>First name</label>
+         <input type="text" class="form-control" id="firstName" placeholder="" required>
+         <div class="invalid-feedback">
+           Valid first name is required.
+         </div>
+       </div>
+       <div class="col-md-6 mb-3">
+         <label>Last name</label>
+         <input type="text" class="form-control" id="lastName" placeholder="" required>
+         <div class="invalid-feedback">
+           Valid last name is required.
+         </div>
+       </div>
+     </div>
+
+     <div class="mb-3">
+       <label>Username</label>
+       <div class="input-group">
+         <div class="input-group-prepend">
+           <span class="input-group-text">@</span>
+         </div>
+         <input type="text" class="form-control" id="username" placeholder="Username" required>
+         <div class="invalid-feedback" style="width: 100%;">
+           Your username is required.
+         </div>
+       </div>
+     </div>
+
+     <div class="mb-3">
+       <label>Email</label>
+       <input type="email" class="form-control" id="email" placeholder="someone@example.com">
+       <div class="invalid-feedback">
+         Please enter a valid email address.
+       </div>
+     </div>
+
+     <div class="mb-3">
+       <label>Contact Number</label>
+       <input type="text" class="form-control" id="contact" required>
+     </div>
+
+     <div class="mb-3">
+       <label>LinkedIn Profile URL<span class="text-muted">(Optional)</span></label>
+       <input type="text" class="form-control" id="linkedInUrl">
+     </div>
+     <div class="mb-4">
+       <label>Languages Spoken<span class="text-muted">(Optional)</span></label>
+       <div class="input-group">
+         <input type="text" class="form-control" id="languages">
+           <div class="input-group-append">
+             <span class="input-group-text">+</span>
+           </div>
+       </div>
+
+     </div>
+     <div class="mb-4">
+         <label>Interests<span class="text-muted">(Optional)</span></label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="interests">
+           <div class="input-group-append">
+             <span class="input-group-text">+</span>
+           </div>
+            </div>
+     </div>
+
+     <div class="row">
+       <div class="col-md-5 mb-3">
+         <label>Role</label>
+         <select class="custom-select d-block w-100" id="country" required>
+           <option>Student</option>
+           <option>Teacher</option>
+         </select>
+         <div class="invalid-feedback">
+           Please select a valid role.
+         </div>
+       </div>
+     </div>
+     <hr class="mb-4">
+
+          <div class="mb-3">
+            <label>University</label>
+            <input type="text" class="form-control" id="university" required>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <label>City</label>
+              <input type="text" class="form-control" id="city" name="city" required>
+              <div class="invalid-feedback">
+                City required.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label>State</label>
+              <input type="text" class="form-control" id="state" name="state" required>
+              <div class="invalid-feedback">
+                State required.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label>Zip</label>
+              <input type="text" class="form-control" id="zip"name="zip" required>
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label>Degree</label>
+              <input type="text" class="form-control" id="degree" name="degree" required>
+              <div class="invalid-feedback">
+                Degree required.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label>Year of Passing</label>
+              <input type="text" class="form-control" id="year" name="passYear" required>
+              <div class="invalid-feedback">
+                Required.
+              </div>
+            </div>
+          </div>
+
+
+               <div class="mb-3">
+                 <label>Course Name</label>
+                 <input type="text" class="form-control" id="courses" name="courses" required>
+                 <div class="invalid-feedback">
+                   Required.
+                 </div>
+               </div>
+               <hr class="mb-4">
+   </form>
+ </div>
+</div>
+</div>
+    </section>
+  </body>
+  <footer>
+    <p>Made by Vivek Gupta</p>
+  </footer>
+</html>
